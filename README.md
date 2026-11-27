@@ -1,6 +1,8 @@
 # Daggerbot
 
 A Discord bot for rolling Daggerheart duality dice.
+Run main.py
+I used python 3.14, but you can probably use any modern version
 
 ## ?roll
 
