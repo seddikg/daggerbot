@@ -81,10 +81,11 @@ async def roll(ctx: commands.Context, *args: str):
     def spacer():
         embed.add_field(name="\u200b", value="\u200b", inline=True)
 
-    # Row 1: Hope | Total | Fear
-    embed.add_field(name="Hope Die", value=f"`{hope_die}`", inline=True)
-    embed.add_field(name="Total", value=f"`{total}`", inline=True)
+    # Row 1: Fear | Total | Hope
     embed.add_field(name="Fear Die", value=f"`{fear_die}`", inline=True)
+    embed.add_field(name="Total", value=f"`{total}`", inline=True)
+    embed.add_field(name="Hope Die", value=f"`{hope_die}`", inline=True)
+
 
     # Row 2: extras, centered according to how many there are
     extras = []
