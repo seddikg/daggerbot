@@ -47,7 +47,7 @@ OUTCOMES = {
 }
 
 
-@bot.command()
+@bot.command(aliases=["r"])
 async def roll(ctx: commands.Context, *args: str):
     """Usage: ?roll [modifier] [adv]   e.g. ?roll 2 + 3 adv"""
     is_advantage = any(a.lower() == "adv" for a in args)
