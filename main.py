@@ -115,6 +115,9 @@ async def roll(ctx: commands.Context, *args: str):
         await ctx.reply(embed=embed, file=file, mention_author=False)
     else:
         await ctx.reply(embed=embed, mention_author=False)
+        
+    # Delete the original command per Mad's request, so the channel isn't cluttered with roll commands   
+    await ctx.message.delete()
 
 @bot.event
 async def on_command_error(ctx: commands.Context, error: commands.CommandError):
